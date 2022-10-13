@@ -16,11 +16,39 @@ const WalineComponent = (props) => {
   const updateWaline = url => {
     walineInstanceRef.current?.update(props)
   }
-
+  const locale = {
+    nick: '暱稱',
+    nickError: '暱稱不能少於3個字符',
+    mail: '信箱',
+    mailError: '請填寫正確的信箱地址',
+    link: '網址',
+    placeholder: '歡迎留言',
+    sofa: '來搶頭香吧！',
+    submit: '傳送',
+    reply: '回覆',
+    cancelReply: '取消回覆',
+    comment: '留言',
+    more: '載入更多...',
+    preview: '預覽',
+    emoji: '表情',
+    uploadImage: '上傳圖片',
+    seconds: '秒前',
+    minutes: '分鐘前',
+    hours: '小時前',
+    days: '天前',
+    now: '剛剛',
+    uploading: '正在上傳',
+    login: '登入',
+    logout: '登出',
+    admin: '雫雫',
+    word: '字',
+    wordHint: '留言字數應在 $0 到 $1 字之間！\n當前字數：$2'
+  }
   React.useEffect(() => {
     walineInstanceRef.current = init({
       ...props,
       el: containerRef.current,
+      locale,
       serverURL: BLOG.COMMENT_WALINE_SERVER_URL
     })
     router.events.on('routeChangeComplete', updateWaline)
