@@ -1,5 +1,5 @@
 const CONFIG_HEXO = {
-  HOME_BANNER_ENABLE: true,
+  HOME_BANNER_ENABLE: false,
   HOME_BANNER_GREETINGS: ['Hi，我是一个程序员', 'Hi，我是一个打工人', 'Hi，我是一个干饭人', '欢迎来到我的博客🎉'], // 首页大图标语文字
 
   // 菜单配置
@@ -10,13 +10,13 @@ const CONFIG_HEXO = {
 
   POST_LIST_COVER: true, // 文章封面
   POST_LIST_SUMMARY: true, // 文章摘要
-  POST_LIST_PREVIEW: true, // 读取文章预览
+  POST_LIST_PREVIEW: false, // 读取文章预览
 
   ARTICLE_ADJACENT: true, // 显示上一篇下一篇文章推荐
   ARTICLE_COPYRIGHT: true, // 显示文章版权声明
   ARTICLE_RECOMMEND: true, // 文章关联推荐
 
-  WIDGET_LATEST_POSTS: true, // 显示最新文章卡
+  WIDGET_LATEST_POSTS: false, // 显示最新文章卡
   WIDGET_ANALYTICS: false, // 显示统计卡
   WIDGET_TO_TOP: true,
   WIDGET_TO_COMMENT: true, // 跳到评论区
