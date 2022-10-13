@@ -42,7 +42,12 @@ const WalineComponent = (props) => {
     logout: '登出',
     admin: '雫雫',
     word: '字',
-    wordHint: '留言字數應在 $0 到 $1 字之間！\n當前字數：$2'
+    sticky: '釘選',
+    unsticky: '取消釘選',
+    wordHint: '留言字數應在 $0 到 $1 字之間！\n當前字數：$2',
+    oldest: '按倒序',
+    latest: '按正序',
+    hottest: '按熱門度'
   }
   React.useEffect(() => {
     walineInstanceRef.current = init({
